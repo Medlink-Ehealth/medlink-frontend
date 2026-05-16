@@ -1,6 +1,6 @@
 # CODEOWNERS
 # This file defines code owners for the entire repository.
-# Code owners are automatically requested for review when a pull
+# Code owners are automatically requested for review when a pull is made ❗
 # request modifies code they own.
 #
 # Syntax: <pattern>  <owner> [<owner> ...]
