@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap");
+@import "./styles/animations.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  @apply box-border m-0 p-0;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  @apply bg-[#F0F4F1] text-dark font-sans;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #0a5c45 !important;
+  box-shadow: 0 0 0 3px rgba(10, 92, 69, 0.1);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 10px;
+}
+
+.hero-badge {
+  @apply inline-flex items-center gap-2 rounded-full px-4 py-2 border border-white/20 bg-white/10;
+  animation: floatBadge 3s ease-in-out infinite;
+}
+
+.nav-link {
+  @apply text-sm font-semibold text-[#6B7280] transition-colors duration-200;
+}
+
+.nav-link:hover {
+  color: #0a5c45;
+}
+
+.filter-btn {
+  @apply transition-all duration-200 ease-[cubic-bezier(.34,1.4,.64,1)];
+}
+
+@layer utilities {
+  .bg-primary-grad {
+    background: linear-gradient(135deg, #063d30 0%, #0a5c45 55%, #0d7a5c 100%);
+  }
+  .bg-primary-grad-alt {
+    background: linear-gradient(135deg, #063d30 0%, #0a5c45 60%, #0d7a5c 100%);
+  }
+}
